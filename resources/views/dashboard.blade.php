@@ -82,7 +82,9 @@
         <li>
             <a href="/admin/course"> Courses</a>
         </li>
-
+        <li>
+            <a href="/events"> Events</a>
+        </li>
     </ul>
 </section>
 </body>
