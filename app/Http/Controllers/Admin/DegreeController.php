@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
-use App\Http\Controllers\controller;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 use App\Models\Degree;
 use Illuminate\Http\Request;
@@ -23,11 +23,11 @@ class DegreeController extends Controller
 
     public function store(Request $Request)
     {
-        $degree = new Degree();
-        $this->validate($Request,[
-            'name'=>'required|unique:degrees',
-            'is_active'=>'required',
-        ]);
+//        $degree = new Degree();
+//        $this->validate($Request,[
+//            'name'=>'required|unique:degrees',
+//            'is_active'=>'required',
+//        ]);
         $degree =Degree::create($Request->all());
         $degree->save();
         return redirect('/admin/degree');
