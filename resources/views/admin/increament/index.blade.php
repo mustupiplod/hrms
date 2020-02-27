@@ -20,10 +20,10 @@
         @foreach($increaments as $increament)
             <tr>
                 <td>
-                    {{$increament->name}}
+                    {{$increament->increament_name}}
                 </td>
                 <td>
-                    {{$increament->code}}
+                    {{$increament->increament_code}}
                 </td>
                 <td>
                     {{$increament->remark}}
