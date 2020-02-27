@@ -8,6 +8,6 @@ class Team_master extends Model
 {
     //
     protected $fillable = [
-        'name',
+        'team_name',
     ];
 }
