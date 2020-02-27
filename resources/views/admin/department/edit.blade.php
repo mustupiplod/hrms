@@ -10,7 +10,7 @@
             @csrf
 
             <div class="form-group " style="margin-top: 25px; ">
-                <input type="text" class="form-control" name="name" value="{{$department->name}}">
+                <input type="text" class="form-control" name="department_name" value="{{$department->department_name}}">
             </div>
 
             <div class="form-group " style="margin-top: 25px;">
@@ -22,7 +22,7 @@
                 <label for="">Parent Department: </label>
                 <select name="parent_depart"  class="form-control">
                     @foreach($departs as $item)
-                    <option value="{{$item->name}}">{{$item->name}}</option>
+                    <option value="{{$item->parent_depart}}">{{$item->parent_depart}}</option>
                     @endforeach
                     <option value="None">None</option>
                 </select>
@@ -37,10 +37,10 @@
             <div class="form-group " style="margin-top: 25px;">
                 <label for="">Status: </label>
                 <select name="is_active" id="" class="form-control">
-                    @if($department->status == 0)
-                        <option value="{{$department->status}}">Active</option>
+                    @if($department->is_active == 0)
+                        <option value="{{$department->is_active}}">Active</option>
                     @else
-                        <option value="{{$department->status}}">Inactive</option>
+                        <option value="{{$department->is_active}}">Inactive</option>
                     @endif
                     <option value="0">Active</option>
                     <option value="1">Inactive</option>

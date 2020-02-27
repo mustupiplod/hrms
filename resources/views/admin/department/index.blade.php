@@ -20,7 +20,7 @@
             @foreach($departments as $department)
                 <tr>
                     <td>
-                        {{$department->name}}
+                        {{$department->department_name}}
                     </td>
                     <td>
                         {{$department->parent_depart}}
@@ -32,7 +32,7 @@
                         {{$department->remark}}
                     </td>
                     <td>
-                        @if($department->is_active == 0)
+                        @if($department->is_active == "0")
                             <span>Active</span>
                         @else
                             <span> Inactive</span>

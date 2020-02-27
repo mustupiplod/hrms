@@ -9,7 +9,7 @@
             @csrf
             <div class="form-group " style="margin-top: 25px;">
                 <label for="">Name: <b style="color: red;">*</b> </label>
-                <input type="text" class="form-control" name="name" autocomplete="off">
+                <input type="text" class="form-control" name="department_name" autocomplete="off">
             </div>
             <div class="form-group " style="margin-top: 25px;">
                 <label for="">Lead: <b style="color: red;">*</b></label>
@@ -21,7 +21,7 @@
                 <select name="parent_depart"  class="form-control">
                     <option value="0">Select Any</option>
                     @foreach($departs as $depart)
-                    <option value="{{$depart->name}}">{{$depart->name}}</option>
+                    <option value="{{$depart->parent_depart_name}}">{{$depart->parent_depart_name}}</option>
                         @endforeach
                 </select>
             </div>
