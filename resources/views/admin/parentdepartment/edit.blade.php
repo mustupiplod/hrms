@@ -9,13 +9,13 @@
         <form action="{{route('admin.parentdepartment.update',$parent->id)}}" method="post">
             @csrf
             <div class="form-group " style="margin-top: 25px; ">
-                <input type="text" class="form-control" name="name" value="{{$parent->name}}">
+                <input type="text" class="form-control" name="parent_depart_name" value="{{$parent->parent_depart_name}}">
             </div>
 
             <div class="form-group " style="margin-top: 25px;">
                 <label for="">Status: </label>
                 <select name="is_active" id="" class="form-control">
-                    @if($parent->is_active == 0)
+                    @if($parent->is_active == "0")
                         <option value="{{$parent->is_active}}">Active</option>
                     @else
                         <option value="{{$parent->is_active}}">Inactive</option>

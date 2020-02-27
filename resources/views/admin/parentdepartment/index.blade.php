@@ -19,10 +19,10 @@
             @foreach($parents as $parent)
                 <tr>
                     <td>
-                        {{$parent->name}}
+                        {{$parent->parent_depart_name}}
                     </td>
                     <td>
-                        @if($parent->is_active == 0)
+                        @if($parent->is_active == "0")
                             <span>Active</span>
                         @else
                             <span> Inactive</span>
