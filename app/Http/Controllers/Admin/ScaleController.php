@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
-use App\Http\Controllers\controller;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 use App\Models\Scale;
 use Illuminate\Http\Request;
@@ -17,12 +17,13 @@ class ScaleController extends Controller
     public function create()
     {
         $currencys = DB::table('currency_masters')->get();
-        return view('admin.scale.create',['currencys'=>$currencys]);
+        $employees = DB::table('employees')->get();
+        return view('admin.scale.create',['currencys'=>$currencys,'employees'=>$employees]);
     }
 
     public function store(Request $Request)
     {
-        $scale = new Scale();
+//        $scale = new Scale();
         $scale = Scale::create($Request->all());
         $scale->save();
         return redirect('/admin/scale');
