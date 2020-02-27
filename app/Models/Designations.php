@@ -8,7 +8,7 @@ class designations extends Model
 {
     //
     protected $fillable=[
-        'name',
+        'designation_name',
         'is_active',
     ];
 }
