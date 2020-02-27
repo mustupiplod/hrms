@@ -8,7 +8,7 @@ class Shifts extends Model
 {
     // here is the fillable variable t insert data
     protected $fillable = [
-        'name',
+        'shift_name',
         'type',
         'start_time',
         'end_time',
