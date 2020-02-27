@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
-use App\Http\Controllers\controller;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 use App\Models\IncreamentMaster;
 use Illuminate\Http\Request;
@@ -21,7 +21,7 @@ class IncreamentMasterController extends Controller
 
     public function store(Request $Request)
     {
-        $increament = new IncreamentMaster();
+//        $increament = new IncreamentMaster();
         $increament = IncreamentMaster::create($Request->all());
         $increament->save();
         return redirect('/admin/increament');
