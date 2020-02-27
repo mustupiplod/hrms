@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class EmpIncreament extends Model
 {
     protected $fillable = [
-        'emp_name',
+        'employee_name',
         'increament_date',
         'current_designation',
         'increament_type',
