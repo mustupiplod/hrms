@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
-use App\Http\Controllers\controller;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 use App\Models\CurrencyMaster;
 use Illuminate\Http\Request;
@@ -21,7 +21,7 @@ class CurrencyController extends Controller
 
     public function store(Request $Request)
     {
-        $currency = new CurrencyMaster();
+//        $currency = new CurrencyMaster();
         $currency =CurrencyMaster::create($Request->all());
         $currency->save();
         return redirect('/admin/currency');
