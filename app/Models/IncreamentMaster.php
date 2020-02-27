@@ -8,7 +8,7 @@ class IncreamentMaster extends Model
 {
     protected $fillable = [
         'increament_name',
-        'code',
+        'increament_code',
         'remark',
         'is_active',
     ];
