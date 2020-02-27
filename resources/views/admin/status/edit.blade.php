@@ -6,7 +6,7 @@
     <h1> Edit Status</h1>
 </div>
 <div class="col-md-5 col-md-offset-3 ">
-    <form action="{{route('admin.status.store')}}" method="post">
+    <form action="{{route('admin.status.store',$status->id)}}" method="post">
         @csrf
         <div class="form-group " style="margin-top: 25px;">
             <label for="">Name: <b style="color: red;">*</b> </label>
