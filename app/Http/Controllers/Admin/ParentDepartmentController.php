@@ -23,11 +23,11 @@ class ParentDepartmentController extends Controller
 
     public function store(Request $Request)
     {
-        $parent = new ParentDepartment();
-        $this->validate($Request,[
-            'name'=>'required|unique:parent_departments',
-            'is_active'=>'required',
-        ]);
+//        $parent = new ParentDepartment();
+//        $this->validate($Request,[
+//            'name'=>'required|unique:parent_departments',
+//            'is_active'=>'required',
+//        ]);
         $parent = ParentDepartment::create($Request->all());
         $parent->save();
         return redirect('admin/parentdepartment');
