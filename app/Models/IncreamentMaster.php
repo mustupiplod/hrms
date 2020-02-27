@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class IncreamentMaster extends Model
 {
     protected $fillable = [
-        'name',
+        'increament_name',
         'code',
         'remark',
         'is_active',
