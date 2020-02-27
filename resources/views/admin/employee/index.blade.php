@@ -15,20 +15,20 @@
 </div>
 <div class="col-md-7 mt-4">
     <table class="table  table-bordered">
-        <th>Name</th><th>Middle-Name</th><th>Last-Name</th><th>E-Mail</th><th>Phone No</th><th>Addres</th><th>Location</th><th>D.O.B</th><th>Gender</th><th>Marital-Status</th><th>Education</th><th>Year Completed</th><th>Parent-Department</th><th>Department</th><th>Department-Lead</th><th>Designation</th><th>Ation</th>
+        <th>Name</th><th>Middle-Name</th><th>Last-Name</th><th>E-Mail</th><th>Phone No</th><th>Addres</th><th>Location</th><th>D.O.B</th><th>Gender</th><th>Marital-Status</th><th>Education</th><th>Degree</th><th>Year Completed</th><th>Parent-Department</th><th>Department</th><th>Department-Lead</th><th>Designation</th><th>Ation</th>
         @foreach($employees as $employee)
             <tr>
                 <td>
-                    {{$employee->name}}
+                    {{$employee->f_name}}
                 </td>
                 <td>
-                    {{$employee->mname}}
+                    {{$employee->m_name}}
                 </td>
                 <td>
-                    {{$employee->lname}}
+                    {{$employee->l_name}}
                 </td>
                 <td>
-                    {{$employee->email}}
+                    {{$employee->email_id}}
                 </td>
                 <td>
                     {{$employee->mobile}}
@@ -40,31 +40,34 @@
                     {{$employee->location}}
                 </td>
                 <td>
-                    {{$employee->gender}}
-                </td>
-                <td>
                     {{$employee->dob}}
                 </td>
                 <td>
-                    {{$employee->marital_status}}
+                    {{$employee->gender}}
                 </td>
                 <td>
-                    {{$employee->education}}
+                    {{$employee->marital_name}}
+                </td>
+                <td>
+                    {{$employee->school_name}}
+                </td>
+                <td>
+                    {{$employee->degree_name}}
                 </td>
                 <td>
                     {{$employee->year_complete}}
                 </td>
                 <td>
-                    {{$employee->parent_department}}
+                    {{$employee->parent_depart_name}}
                 </td>
                 <td>
-                    {{$employee->department}}
+                    {{$employee->department_name}}
                 </td>
                 <td>
                     {{$employee->department_lead}}
                 </td>
                 <td>
-                    {{$employee->designation}}
+                    {{$employee->designation_name}}
                 </td>
 
 
@@ -78,7 +81,7 @@
                 <td >
                     <a href="{{route('admin.employee.show',['id'=>$employee->id])}}" class="btn btn-info">View</a>
                     <a href="{{route('admin.employee.edit',['id'=>$employee->id])}}" class="btn btn-success pull-right ">Edit</a>
-{{--                    <a href="{{route('admin.currency.delete',['id'=>$employee->id])}}" class="btn btn-danger pull-right ">Delete</a>--}}
+                    <a href="{{route('admin.employee.delete',['id'=>$employee->id])}}" class="btn btn-danger pull-right ">Delete</a>
 
                 </td>
             </tr>

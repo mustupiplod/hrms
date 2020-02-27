@@ -15,19 +15,19 @@
             @csrf
             <div class="form-group " style="margin-top: 25px;">
                 <label for="">Name: <b style="color: red;">*</b> </label>
-                <input type="text" class="form-control" name="name">
+                <input type="text" class="form-control" name="f_name">
             </div>
             <div class="form-group " style="margin-top: 25px;">
                 <label for="">Middle Name: <b style="color: red;">*</b> </label>
-                <input type="text" class="form-control" name="mname">
+                <input type="text" class="form-control" name="m_name">
             </div>
             <div class="form-group " style="margin-top: 25px;">
                 <label for="">Last Name: <b style="color: red;">*</b> </label>
-                <input type="text" class="form-control" name="lname">
+                <input type="text" class="form-control" name="l_name">
             </div>
             <div class="form-group " style="margin-top: 25px;">
                 <label for="">E-Mail: <b style="color: red;">*</b> </label>
-                <input type="email" class="form-control" name="email">
+                <input type="email" class="form-control" name="email_id">
             </div>
             <div class="form-group " style="margin-top: 25px;">
                 <label for="">Phone No: <b style="color: red;">*</b> </label>
@@ -56,7 +56,12 @@
             </div>
             <div class="form-group " style="margin-top: 25px;">
                 <label for="">Marital Status: <b style="color: red;">*</b> </label>
-                <input type="text" class="form-control" name="marital_status" >
+                <select name="marital_status" class="form-control">
+                    <option value="0">Select Status</option>
+                    @foreach($maritals as $marital)
+                        <option value="{{$marital->id}}">{{$marital->marital_name}}</option>
+                    @endforeach
+                </select>
             </div>
 
             {{--        <div class="form-group " style="margin-top: 25px;">--}}
@@ -72,10 +77,19 @@
             <div class="form-group " style="margin-top: 25px;">
                 <label for="">Education: <b style="color: red;">*</b> </label>
                 <select name="education" class="form-control">
-                    <option value="0">Select Degree</option>
-                @foreach($degrees as $degree)
-                    <option value="{{$degree->name}}">{{$degree->name}}</option>
+                    <option value="0">College/University</option>
+                @foreach($educations as $education)
+                    <option value="{{$education->id}}">{{$education->school_name}}</option>
                 @endforeach
+                </select>
+            </div>
+            <div class="form-group " style="margin-top: 25px;">
+                <label for="">Degree: <b style="color: red;">*</b> </label>
+                <select name="degree" class="form-control">
+                    <option value="0">Select Degree</option>
+                    @foreach($degrees as $degree)
+                        <option value="{{$degree->id}}">{{$degree->degree_name}}</option>
+                    @endforeach
                 </select>
             </div>
             <div class="form-group">
@@ -87,7 +101,7 @@
                 <select name="parent_department" class="form-control">
                     <option value="0">Select Parent-Department</option>
                     @foreach($parent_departments as $department)
-                        <option value="{{$department->name}}">{{$department->name}}</option>
+                        <option value="{{$department->id}}">{{$department->parent_depart_name}}</option>
                     @endforeach
                 </select>
             </div>
@@ -96,7 +110,7 @@
                 <select name="department" class="form-control">
                     <option value="0">Select Department</option>
                     @foreach($departments as $department)
-                        <option value="{{$department->name}}">{{$department->name}}</option>
+                        <option value="{{$department->id}}">{{$department->department_name}}</option>
                     @endforeach
                 </select>
             </div>
@@ -115,7 +129,7 @@
                 <select name="designation" class="form-control">
                     <option value="0">Select Designation</option>
                     @foreach($designations as $designation)
-                        <option value="{{$designation->name}}">{{$designation->name}}</option>
+                        <option value="{{$designation->id}}">{{$designation->designation_name}}</option>
                     @endforeach
                 </select>
             </div>
