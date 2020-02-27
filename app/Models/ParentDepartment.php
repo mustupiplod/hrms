@@ -8,7 +8,7 @@ class ParentDepartment extends Model
 {
     //
     protected $fillable =[
-        'name',
+        'parent_depart_name',
         'is_active',
     ];
 }
