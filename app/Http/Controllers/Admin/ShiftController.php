@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
-use App\Http\Controllers\controller;
+use App\Http\Controllers\Controller;
 use App\Models\Shifts;
 use Illuminate\Support\Facades\DB;
 
-class shiftcontroller extends Controller
+class ShiftController extends Controller
 {
 
     public function index()
