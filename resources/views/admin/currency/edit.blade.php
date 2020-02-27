@@ -9,15 +9,15 @@
             @csrf
             <div class="form-group " style="margin-top: 25px; ">
                 <label>Currency Name:</label>
-                <input type="text" class="form-control" name="name" value="{{$currency->name}}">
+                <input type="text" class="form-control" name="currency_name" value="{{$currency->currency_name}}">
             </div>
             <div class="form-group " style="margin-top: 25px; ">
                 <label>Code:</label>
-                <input type="text" name="code" value="{{$currency->code}}">
+                <input type="text" name="code" class="form-control" value="{{$currency->code}}">
             </div>
             <div class="form-group " style="margin-top: 25px; ">
                 <label>Value:</label>
-                <input type="text" name="value" value="{{$currency->value}}">
+                <input type="text" name="value" class="form-control" value="{{$currency->value}}">
             </div>
             <div class="form-group " style="margin-top: 25px;">
                 <label for="">Status: </label>

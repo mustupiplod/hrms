@@ -19,7 +19,7 @@
             @foreach($currencys as $currency)
                 <tr>
                     <td>
-                        {{$currency->name}}
+                        {{$currency->currency_name}}
                     </td>
                     <td>
                         {{$currency->code}}
