@@ -156,3 +156,13 @@ Route::get('/events/add', 'EventController@create')->name('events.add');
 Route::post('/events/store', 'EventController@store')->name('events.store');
 
 //Events Routes End
+
+//Exit Details routes start
+Route::get('/admin/exitdetails/', 'Admin\ExitDetailsController@index')->name('admin.exitdetails.index');
+Route::get('/admin/exitdetails/create', 'Admin\ExitDetailsController@create')->name('admin.exitdetails.create');
+Route::post('/admin/exitdetails/store', 'Admin\ExitDetailsController@store')->name('admin.exitdetails.store');
+Route::post('/admin/exitdetails/update/{id}', 'Admin\ExitDetailsController@update')->name('admin.exitdetails.update');
+Route::get('/admin/exitdetails/edit/{id}', 'Admin\ExitDetailsController@edit')->name('admin.exitdetails.edit');
+Route::get('/admin/exitdetails/delete/{id}', 'Admin\ExitDetailsController@delete')->name('admin.exitdetails.delete');
+//Exit details routes ends
+
