@@ -20,7 +20,7 @@
             @foreach($shifts as $shift)
                 <tr>
                     <td>
-                        {{$shift->name}}
+                        {{$shift->shift_name}}
                     </td>
                     <td>
                         {{$shift->type}}

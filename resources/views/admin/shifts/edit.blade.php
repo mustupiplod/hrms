@@ -10,7 +10,7 @@
             @csrf
             <div class="form-group " style="margin-top: 25px; ">
                 <label for="">Name: </label>
-                <input type="text" class="form-control" name="name" value="{{$shifts->name}}">
+                <input type="text" class="form-control" name="shift_name" value="{{$shifts->shift_name}}">
             </div>
             <div class="form-group " style="margin-top: 25px; ">
                 <label for="">Shift-Type: </label>
@@ -28,7 +28,7 @@
                 <label for="">Total Time:</label>
                 <br>
                 <span id="result" class="result">{{$shifts->total_time}} </span>
-                <input type="hidden"  name="total_time" id="total"  >
+                <input type="hidden"  name="total_time" id="total" >
             </div>
 
             <div class="form-group " style="margin-top: 25px;">
