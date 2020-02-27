@@ -8,7 +8,7 @@ class MaritalStatus extends Model
 {
     //
     protected $fillable = [
-        'name',
+        'marital_name',
         'is_active'
     ];
 }
