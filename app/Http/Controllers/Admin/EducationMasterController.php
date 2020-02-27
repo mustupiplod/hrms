@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
-use App\Http\Controllers\controller;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 use App\Models\EducationMaster;
 use Illuminate\Http\Request;
@@ -22,7 +22,7 @@ class EducationMasterController extends Controller
 
     public function store(Request $Request)
     {
-        $education = new EducationMaster();
+//        $education = new EducationMaster();
         $education = EducationMaster::create($Request->all());
         $education->save();
         return redirect('/admin/education');
