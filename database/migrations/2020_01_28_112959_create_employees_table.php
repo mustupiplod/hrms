@@ -26,6 +26,7 @@ class CreateEmployeesTable extends Migration
             $table->string('location')->nullable();
             $table->text('address')->nullable();
             $table->string('education')->nullable()->comment('fetching from Education master');
+            $table->string('degree')->nullable()->comment('fetching from the degree master');
             $table->string('year_complete')->nullable();
             $table->string('parent_department')->nullable()->comment('fetching from Parent-Department master');
             $table->string('department')->nullable()->comment('fetching from Department master');
