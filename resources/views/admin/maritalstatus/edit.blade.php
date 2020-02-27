@@ -13,7 +13,7 @@
         @csrf
         <div class="form-group " style="margin-top: 25px;">
             <label for="">Name: <b style="color: red;">*</b> </label>
-            <input type="text" class="form-control" name="name" value="{{$marital->name}}">
+            <input type="text" class="form-control" name="marital_name" value="{{$marital->marital_name}}">
         </div>
 
         <div class="form-group " style="margin-top: 25px;">

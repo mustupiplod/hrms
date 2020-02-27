@@ -23,7 +23,7 @@
             @foreach($maritals as $marital)
                 <tr>
                     <td>
-                        {{$marital->name}}
+                        {{$marital->marital_name}}
                     </td>
                     <td>
                         @if($marital->is_active == 0)
