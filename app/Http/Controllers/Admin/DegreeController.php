@@ -38,7 +38,7 @@ class DegreeController extends Controller
         if($degree = Degree::whereId($id)->first())
         {
             $degrees = DB::table('degrees')->get();
-            return view('admin.degree.edit',['degree'=>$degree],['degrees'=>$degrees]);
+            return view('admin.degree.edit',['degree_data'=>$degree],['degrees'=>$degrees]);
         }
 
     }
