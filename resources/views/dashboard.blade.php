@@ -85,6 +85,9 @@
         <li>
             <a href="/events"> Events</a>
         </li>
+        <li>
+            <a href="/admin/exitdetails">Exit-Details</a>
+        </li>
     </ul>
 </section>
 </body>
