@@ -7,17 +7,18 @@ use Illuminate\Database\Eloquent\Model;
 class Employee extends Model
 {
     protected  $fillable = [
-        'name',
-        'mname',
-        'lname',
+        'f_name',
+        'm_name',
+        'l_name',
         'gender',
         'dob',
-        'email',
+        'email_id',
         'mobile',
         'marital_status',
         'location',
         'address',
         'education',
+        'degree',
         'year_complete',
         'parent_department',
         'department',
