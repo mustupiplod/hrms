@@ -8,7 +8,7 @@ class Degree extends Model
 {
     //
     protected $fillable=[
-        'name',
+        'degree_name',
         'related',
         'is_active',
     ];
