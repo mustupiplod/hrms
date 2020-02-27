@@ -3,10 +3,10 @@
 </head>
 <br>
 <div class="col-lg-8 ">
-    <h1>Increament's</h1>
+    <h1>Employee Increament's</h1>
     <div class="row">
         <div class="col-md-6 ">
-            <a href="{{route('admin.empincreament.create')}}" class="btn btn-info">Add Increament</a>
+            <a href="{{route('admin.empincreament.create')}}" class="btn btn-info">Add Employee Increament</a>
         </div>
         <div class="col-md-6 ">
             <a href="/" class="btn btn-info" style="float:right;">Exit</a>
@@ -20,7 +20,7 @@
         @foreach($empincreaments as $increament)
             <tr>
                 <td>
-                    {{$increament->emp_name}}
+                    {{$increament->employee_name}}
                 </td>
                 <td>
                     {{$increament->current_designation}}

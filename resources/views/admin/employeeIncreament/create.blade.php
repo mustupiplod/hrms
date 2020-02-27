@@ -13,7 +13,13 @@
         @csrf
         <div class="form-group " style="margin-top: 25px;">
             <label for="">Employee Name: <b style="color: red;">*</b> </label>
-            <input type="text" class="form-control" name="emp_name">
+{{--            <input type="text" class="form-control" name="employee_name">--}}
+            <select name="employee_name" class="form-control">
+                <option value="0">Select Employee</option>
+                @foreach($employees as $employee)
+                    <option value="{{$employee->id}}">{{$employee->f_name}} {{$employee->l_name}}</option>
+                @endforeach
+            </select>
         </div>
 
         <div class="form-group " style="margin-top: 25px;">
@@ -21,7 +27,7 @@
             <select name="current_designation" class="form-control">
                 <option value="0">Select Designation</option>
                 @foreach($designations as $designation)
-                <option value="{{$designation->name}}">{{$designation->name}}</option>
+                <option value="{{$designation->designation_name}}">{{$designation->designation_name}}</option>
                 @endforeach
             </select>
         </div>
@@ -30,7 +36,7 @@
             <select name="increament_type" class="form-control">
                 <option value="0">Select Increament</option>
                 @foreach($increaments as $increament)
-                    <option value="{{$increament->name}}">{{$increament->name}}</option>
+                    <option value="{{$increament->increament_name}}">{{$increament->increament_name}}</option>
                 @endforeach
             </select>
         </div>
