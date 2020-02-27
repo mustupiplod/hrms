@@ -34,8 +34,9 @@ class EmpIncreamentController extends Controller
     {
         $designations = DB::table('designations')->get();
         $increaments = DB::table('increament_masters')->get();
+        $employees = DB::table('employees')->get();
         $empincreament= EmpIncreament::whereId($id)->first();
-        return view('admin.employeeIncreament.edit',['empincreament'=>$empincreament,'designations'=>$designations,'increaments'=>$increaments]);
+        return view('admin.employeeIncreament.edit',['empincreament'=>$empincreament,'designations'=>$designations,'increaments'=>$increaments,'employees'=>$employees]);
     }
 
     public function update(Request $Request, $id)
