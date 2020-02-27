@@ -37,7 +37,12 @@
 
         <div class="form-group " style="margin-top: 25px; ">
             <label>Employee:</label>
-            <input type="text" class="form-control" name="emp_name" >
+            <select class="form-control" name="emp_name" >
+                <option value="0">Select Employee</option>
+                @foreach($employees as $employee)
+                    <option value="{{$employee->id}}">{{$employee->f_name}} {{$employee->l_name}}</option>
+                @endforeach
+            </select>
         </div>
 
         <div class="form-group " style="margin-top: 25px;">
