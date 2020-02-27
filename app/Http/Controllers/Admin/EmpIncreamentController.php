@@ -18,7 +18,8 @@ class EmpIncreamentController extends Controller
     {
         $designations = DB::table('designations')->get();
         $increaments = DB::table('increament_masters')->get();
-        return view('admin.employeeIncreament.create',['designations'=>$designations],['increaments'=>$increaments]);
+        $employees = DB::table('employees')->get();
+        return view('admin.employeeIncreament.create',['designations'=>$designations,'increaments'=>$increaments,'employees'=>$employees]);
     }
 
     public function store(Request $Request)
