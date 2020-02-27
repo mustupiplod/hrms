@@ -20,7 +20,7 @@
         @foreach($statuss as $status)
             <tr>
                 <td>
-                    {{$status->name}}
+                    {{$status->status_name}}
                 </td>
 
                 <td >
