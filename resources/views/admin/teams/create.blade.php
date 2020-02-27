@@ -14,7 +14,7 @@
         @csrf
         <div class="form-group">
             <label>Team Name<b style="color: red;">*</b></label>
-            <input type="text" name="name" class="form-control">
+            <input type="text" name="team_name" class="form-control">
         </div>
 
         <div class="form-group " style="margin-top: 25px;">

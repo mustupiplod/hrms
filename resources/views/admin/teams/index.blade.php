@@ -15,10 +15,6 @@
     </div>
 
 </div>
-
-
-
-
 <div class="col-md-9 mt-4">
     <table class="table  table-bordered ">
         <th>Name</th>
@@ -30,7 +26,7 @@
             <tr>
             <td>
                 {{$key->id}}
-                {{$key->name}}
+                {{$key->team_name}}
                 {{$key->team_master_id}}
             </td>
                 <td>
