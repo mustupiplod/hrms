@@ -76,6 +76,12 @@
         <li>
             <a href="/admin/employee"> Employee</a>
         </li>
+        <li>
+            <a href="/admin/team"> Teams</a>
+        </li>
+        <li>
+            <a href="/admin/course"> Courses</a>
+        </li>
 
     </ul>
 </section>
