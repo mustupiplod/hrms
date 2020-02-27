@@ -15,7 +15,7 @@ class CreateStatusMastersTable extends Migration
     {
         Schema::create('status_masters', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name')->nullable();
+            $table->string('status_name')->nullable();
             $table->timestamps();
         });
     }

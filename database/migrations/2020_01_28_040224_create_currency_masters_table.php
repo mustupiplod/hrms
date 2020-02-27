@@ -15,7 +15,7 @@ class CreateCurrencyMastersTable extends Migration
     {
         Schema::create('currency_masters', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name')->nullable();
+            $table->string('currency_name')->nullable();
             $table->string('code')->nullable();
             $table->string('value')->nullable();
             $table->string('is_active')->nullable();

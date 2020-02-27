@@ -15,8 +15,8 @@ class CreateIncreamentMastersTable extends Migration
     {
         Schema::create('increament_masters', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name')->nullable();
-            $table->string('code')->nullable();
+            $table->string('increament_name')->nullable();
+            $table->string('increament_code')->nullable();
             $table->text('remark')->nullable();
             $table->string('is_active')->nullable();
             $table->timestamps();

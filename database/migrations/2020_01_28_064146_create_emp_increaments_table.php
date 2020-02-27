@@ -15,7 +15,7 @@ class CreateEmpIncreamentsTable extends Migration
     {
         Schema::create('emp_increaments', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('emp_name')->nullable();
+            $table->string('employee_name')->nullable();
                 $table->string('increament_date')->nullable();
             $table->string('current_designation')->nullable();
             $table->string('increament_type')->nullable();

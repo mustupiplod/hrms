@@ -15,10 +15,10 @@ class CreateScalesTable extends Migration
     {
         Schema::create('scales', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name')->nullable();
+            $table->string('scale_name')->nullable();
             $table->string('currency')->nullable();
             $table->string('compensation_value')->nullable();
-            $table->string('emp_name')->nullable();
+            $table->string('employee_name')->nullable();
             $table->string('is_active');
             $table->timestamps();
         });

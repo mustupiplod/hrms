@@ -15,7 +15,7 @@ class CreateMaritalStatusesTable extends Migration
     {
         Schema::create('marital_statuses', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name')->nullable();
+            $table->string('marital_name')->nullable();
             $table->string('is_active')->nullable();
             $table->timestamps();
         });

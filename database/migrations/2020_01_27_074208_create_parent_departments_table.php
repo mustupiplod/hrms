@@ -15,7 +15,7 @@ class CreateParentDepartmentsTable extends Migration
     {
         Schema::create('parent_departments', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name')->nullable();
+            $table->string('parent_depart_name')->nullable();
             $table->string('is_active')->nullable();
             $table->timestamps();
         });

@@ -15,7 +15,7 @@ class CreateTeamMastersTable extends Migration
     {
         Schema::create('team_masters', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name')->nullable();
+            $table->string('team_name')->nullable();
             $table->timestamps();
         });
     }
