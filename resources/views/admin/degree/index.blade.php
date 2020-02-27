@@ -19,7 +19,7 @@
             @foreach($degrees as $degree)
                 <tr>
                     <td>
-                        {{$degree->name}}
+                        {{$degree->degree_name}}
                     </td>
                     <td>
                         {{$degree->related}}
