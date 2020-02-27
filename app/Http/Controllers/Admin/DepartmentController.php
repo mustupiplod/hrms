@@ -19,14 +19,14 @@ class DepartmentController extends Controller
     public function create()
     {
         //
-        $departs = DB::table('departments')->get();
+        $departs = DB::table('parent_departments')->get();
         return view('admin.department.create',['departs'=>$departs]);
     }
 
     public function store(Request $Request)
     {
         //
-        $depart = new department();
+//        $depart = new department();
         $depart = Department::create($Request->all());
         $depart->save();
         return redirect('/admin/department');
