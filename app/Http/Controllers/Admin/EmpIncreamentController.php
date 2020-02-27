@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
-use App\Http\Controllers\controller;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 use App\Models\EmpIncreament;
 use Illuminate\Http\Request;
@@ -23,7 +23,7 @@ class EmpIncreamentController extends Controller
 
     public function store(Request $Request)
     {
-        $empincreament = new EmpIncreament();
+//        $empincreament = new EmpIncreament();
         $empincreament = EmpIncreament::create($Request->all());
         $empincreament->save();
         return redirect('/admin/empincreament');
