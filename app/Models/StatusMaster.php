@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class StatusMaster extends Model
 {
     protected $fillable = [
-        'name',
+        'status_name',
     ];
 }
