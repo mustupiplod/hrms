@@ -132,14 +132,14 @@ Route::get('/admin/maritalstatus/edit/{id}', 'Admin\MaritalStatusController@edit
 Route::get('/admin/maritalstatus/delete/{id}', 'Admin\MaritalStatusController@delete')->name('admin.maritalstatus.delete');
 //StatusMaster routes ends
 
-//// Course Management routes Start
-//Route::get('/admin/course/', 'Admin\CourseController@index')->name('admin.course.index');
-//Route::get('/admin/course/create', 'Admin\CourseController@create')->name('admin.course.create');
-//Route::post('/admin/course/store', 'Admin\CourseController@store')->name('admin.course.store');
-//Route::post('/admin/course/update/{id}', 'Admin\CourseController@update')->name('admin.course.update');
-//Route::get('/admin/course/edit/{id}', 'Admin\CourseController@edit')->name('admin.course.edit');
-//Route::get('/admin/course/delete/{id}', 'Admin\CourseController@delete')->name('admin.course.delete');
-////Course management routes ends
+// Course Management routes Start
+Route::get('/admin/course/', 'Admin\CourseController@index')->name('admin.course.index');
+Route::get('/admin/course/create', 'Admin\CourseController@create')->name('admin.course.create');
+Route::post('/admin/course/store', 'Admin\CourseController@store')->name('admin.course.store');
+Route::post('/admin/course/update/{id}', 'Admin\CourseController@update')->name('admin.course.update');
+Route::get('/admin/course/edit/{id}', 'Admin\CourseController@edit')->name('admin.course.edit');
+Route::get('/admin/course/delete/{id}', 'Admin\CourseController@delete')->name('admin.course.delete');
+//Course management routes ends
 
 //Team routes start
 Route::get('/admin/team/', 'Admin\TeamController@index')->name('admin.team.index');
