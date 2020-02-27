@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
-use App\Http\Controllers\controller;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 use App\Models\StatusMaster;
 use Illuminate\Http\Request;
@@ -22,7 +22,7 @@ class StatusMasterController extends Controller
 
     public function store(Request $Request)
     {
-        $status = new StatusMaster();
+//        $status = new StatusMaster();
         $status =StatusMaster::create($Request->all());
         $status->save();
         return redirect('/admin/status');
