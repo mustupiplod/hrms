@@ -19,7 +19,7 @@
             @foreach($designations as $designation)
                 <tr>
                     <td>
-                        {{$designation->name}}
+                        {{$designation->designation_name}}
                     </td>
                     <td>
                         @if($designation->is_active == 0)

@@ -9,7 +9,7 @@
         <form action="{{route('admin.designation.update',$designation->id)}}" method="post">
             @csrf
             <div class="form-group " style="margin-top: 25px; ">
-                <input type="text" class="form-control" name="name" value="{{$designation->name}}">
+                <input type="text" class="form-control" name="designation_name" value="{{$designation->designation_name}}">
             </div>
 
             <div class="form-group " style="margin-top: 25px;">
