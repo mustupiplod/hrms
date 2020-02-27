@@ -10,7 +10,7 @@
         @csrf
         <div class="form-group " style="margin-top: 25px;">
             <label for="">Scale Name: <b style="color: red;">*</b> </label>
-            <input type="text" class="form-control" name="name" value="{{$scale->name}}">
+            <input type="text" class="form-control" name="scale_name" value="{{$scale->scale_name}}">
         </div>
 
         <div class="form-group " style="margin-top: 25px;">
@@ -34,7 +34,7 @@
 
         <div class="form-group " style="margin-top: 25px; ">
             <label>Employee:</label>
-            <input type="text" class="form-control" name="emp_name" value="{{$scale->emp_name}}">
+            <input type="text" class="form-control" name="employee_name" value="{{$scale->employee_name}}">
         </div>
 
         <div class="form-group " style="margin-top: 25px;">

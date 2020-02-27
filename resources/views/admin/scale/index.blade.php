@@ -16,11 +16,11 @@
 </div>
 <div class="col-md-9 mt-4">
     <table class="table  table-bordered ">
-        <th width="15%">Scale Name</th><th width="10%">Compensation</th><th width="10%">Emplpoyee</th><th width="8%">Status</th> <th width="18%">Action</th>
+        <th width="15%">Scale Name</th><th width="10%">Compensation</th><th width="10%">Employee</th><th width="8%">Status</th> <th width="18%">Action</th>
         @foreach($scales as $scale)
             <tr>
                 <td>
-                    {{$scale->name}}
+                    {{$scale->scale_name}}
                 </td>
                 <td>
                     {{$scale->currency}}
@@ -28,7 +28,7 @@
                     {{$scale->compensation_value}}
                 </td>
                 <td>
-                    {{$scale->emp_name}}
+                    {{$scale->employee_name}}
                 </td>
 
                 <td>
