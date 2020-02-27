@@ -21,7 +21,7 @@
             <select name="degree" class="form-control">
                 <option value="{{$education->degree}}">{{$education->degree}}</option>
                 @foreach($degrees as $degree)
-                    <option value="{{$degree->name}}">{{$degree->name}}</option>
+                    <option value="{{$degree->degree_name}}">{{$degree->degree_name}}</option>
                 @endforeach
             </select>
         </div>
