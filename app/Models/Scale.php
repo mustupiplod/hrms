@@ -7,10 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 class Scale extends Model
 {
     protected $fillable = [
-        'name',
+        'scale_name',
         'currency',
         'compensation_value',
-        'emp_name',
+        'employee_name',
         'is_active',
     ];
 }
