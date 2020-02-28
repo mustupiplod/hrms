@@ -10,7 +10,7 @@
     <h1> Edit Team's</h1>
 </div>
 <div class="col-md-5 col-md-offset-3 ">
-    <form action="{{route('admin.team.store',[$team->id])}}" method="post" enctype="multipart/form-data">
+    <form action="{{route('admin.team.update',[$team->id])}}" method="post" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
             <label>Team Name<b style="color: red;">*</b></label>
