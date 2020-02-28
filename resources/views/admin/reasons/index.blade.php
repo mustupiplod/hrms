@@ -16,9 +16,12 @@
 </div>
 <div class="col-md-9 mt-4">
     <table class="table  table-bordered ">
-        <th width="15%">Reason Type</th><th width="10%">Content</th><th width="10%">Status</th><th width="18%">Action</th>
+        <th width="15%">Reason Id</th><th width="10%">Reason Type</th><th width="18%">Content</th><th width="5%">Status</th><th width="10%">Action</th>
         @foreach($reasons as $reason)
             <tr>
+                <td>
+                    {{$reason->reason_id}}
+                </td>
                 <td>
                     {{$reason->reason_type}}
                 </td>
