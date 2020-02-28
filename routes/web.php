@@ -174,3 +174,12 @@ Route::get('/admin/policy/edit/{id}', 'Admin\CompanyPolicyController@edit')->nam
 Route::get('/admin/policy/delete/{id}', 'Admin\CompanyPolicyController@delete')->name('admin.policy.delete');
 //Exit details routes ends
 
+//Reason masters routes start
+Route::get('/admin/reason/', 'Admin\ReasonMasterController@index')->name('admin.reason.index');
+Route::get('/admin/reason/create', 'Admin\ReasonMasterController@create')->name('admin.reason.create');
+Route::post('/admin/reason/store', 'Admin\ReasonMasterController@store')->name('admin.reason.store');
+Route::post('/admin/reason/update/{id}', 'Admin\ReasonMasterController@update')->name('admin.reason.update');
+Route::get('/admin/reason/edit/{id}', 'Admin\ReasonMasterController@edit')->name('admin.reason.edit');
+Route::get('/admin/reason/delete/{id}', 'Admin\ReasonMasterController@delete')->name('admin.reason.delete');
+//Reason masters routes ends
+
