@@ -40,11 +40,6 @@
     </form>
 </div>
 
-<?
-use Illuminate\Support\Carbon;
-$year = Carbon::now()->year;$month = Carbon::now()->month;$day = Carbon::now()->day;$sec = Carbon::now()->second;
-    $res_id=$year.$month.$day.$sec;
-?>
 <script>
     CKEDITOR.replace( 'description' );
 </script>
