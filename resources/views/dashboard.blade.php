@@ -91,6 +91,9 @@
         <li>
             <a href="/admin/policy">Company Policy</a>
         </li>
+        <li>
+            <a href="/admin/reason">Reasons</a>
+        </li>
     </ul>
 </section>
 </body>
