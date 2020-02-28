@@ -88,6 +88,9 @@
         <li>
             <a href="/admin/exitdetails">Exit-Details</a>
         </li>
+        <li>
+            <a href="/admin/policy">Company Policy</a>
+        </li>
     </ul>
 </section>
 </body>
