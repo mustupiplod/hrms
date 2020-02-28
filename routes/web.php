@@ -154,7 +154,6 @@ Route::get('/admin/team/delete/{id}', 'Admin\TeamController@delete')->name('admi
 Route::get('/events/', 'EventController@index')->name('events.index');
 Route::get('/events/add', 'EventController@create')->name('events.add');
 Route::post('/events/store', 'EventController@store')->name('events.store');
-
 //Events Routes End
 
 //Exit Details routes start
@@ -164,5 +163,14 @@ Route::post('/admin/exitdetails/store', 'Admin\ExitDetailsController@store')->na
 Route::post('/admin/exitdetails/update/{id}', 'Admin\ExitDetailsController@update')->name('admin.exitdetails.update');
 Route::get('/admin/exitdetails/edit/{id}', 'Admin\ExitDetailsController@edit')->name('admin.exitdetails.edit');
 Route::get('/admin/exitdetails/delete/{id}', 'Admin\ExitDetailsController@delete')->name('admin.exitdetails.delete');
+//Exit details routes ends
+
+//Exit Details routes start
+Route::get('/admin/policy/', 'Admin\CompanyPolicyController@index')->name('admin.policy.index');
+Route::get('/admin/policy/create', 'Admin\CompanyPolicyController@create')->name('admin.policy.create');
+Route::post('/admin/policy/store', 'Admin\CompanyPolicyController@store')->name('admin.policy.store');
+Route::post('/admin/policy/update/{id}', 'Admin\CompanyPolicyController@update')->name('admin.policy.update');
+Route::get('/admin/policy/edit/{id}', 'Admin\CompanyPolicyController@edit')->name('admin.policy.edit');
+Route::get('/admin/policy/delete/{id}', 'Admin\CompanyPolicyController@delete')->name('admin.policy.delete');
 //Exit details routes ends
 
