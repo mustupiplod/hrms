@@ -183,14 +183,16 @@ Route::get('/admin/reason/edit/{id}', 'Admin\ReasonMasterController@edit')->name
 Route::get('/admin/reason/delete/{id}', 'Admin\ReasonMasterController@delete')->name('admin.reason.delete');
 //Reason masters routes ends
 
-////QuestionnnaireMaster routes start
-//Route::get('/admin/questionnaire/', 'Admin\QuestionnaireMasterController@index')->name('admin.questionnaire.index');
-//Route::get('/admin/questionnaire/create', 'Admin\QuestionnaireMasterController@create')->name('admin.questionnaire.create');
-//Route::post('/admin/questionnaire/store', 'Admin\QuestionnaireMasterController@store')->name('admin.questionnaire.store');
-//Route::post('/admin/questionnaire/update/{id}', 'Admin\QuestionnaireMasterController@update')->name('admin.questionnaire.update');
-//Route::get('/admin/questionnaire/edit/{id}', 'Admin\QuestionnaireMasterController@edit')->name('admin.questionnaire.edit');
-//Route::get('/admin/questionnaire/delete/{id}', 'Admin\QuestionnaireMasterController@delete')->name('admin.questionnaire.delete');
-////QuestionnnaireMaster routes ends
+//QuestionnnaireMaster routes start
+Route::get('/admin/questionnaire/', 'Admin\QuestionnaireMasterController@index')->name('admin.questionnaire.index');
+Route::get('/admin/questionnaire/create', 'Admin\QuestionnaireMasterController@create')->name('admin.questionnaire.create');
+Route::post('/admin/questionnaire/store', 'Admin\QuestionnaireMasterController@store')->name('admin.questionnaire.store');
+Route::post('/admin/questionnaire/update/{id}', 'Admin\QuestionnaireMasterController@update')->name('admin.questionnaire.update');
+Route::get('/admin/questionnaire/edit/{id}', 'Admin\QuestionnaireMasterController@edit')->name('admin.questionnaire.edit');
+Route::get('/admin/questionnaire/delete/{id}', 'Admin\QuestionnaireMasterController@delete')->name('admin.questionnaire.delete');
+Route::get('/admin/questionnaire/questiondelete/{id}', 'Admin\QuestionnaireMasterController@questiondelete')->name('admin.questionnaire.questiondelete');
+
+//QuestionnnaireMaster routes ends
 
 //QuestionnnaireMaster routes start
 Route::get('/admin/questiontype/', 'Admin\QuestionTypeController@index')->name('admin.questiontype.index');
