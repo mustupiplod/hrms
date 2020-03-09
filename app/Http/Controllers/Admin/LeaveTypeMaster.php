@@ -43,4 +43,12 @@ class LeaveTypeMaster extends Controller
         $leaves->update($data);
         return redirect('/admin/leavetype');
     }
+
+    public function delete($id)
+    {
+        $leaves = LeaveTypes::where('leave_id','=',$id);
+        $leaves->delete();
+        return redirect('/admin/leavetype');
+    }
+
 }
