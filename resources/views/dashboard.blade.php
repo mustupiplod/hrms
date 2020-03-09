@@ -94,6 +94,12 @@
         <li>
             <a href="/admin/reason">Reasons</a>
         </li>
+        <li>
+            <a href="/admin/questionnaire">Questionnaire</a>
+        </li>
+        <li>
+            <a href="/admin/questiontype">Question-Type</a>
+        </li>
     </ul>
 </section>
 </body>
