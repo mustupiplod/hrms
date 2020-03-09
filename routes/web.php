@@ -194,11 +194,20 @@ Route::get('/admin/questionnaire/questiondelete/{id}', 'Admin\QuestionnaireMaste
 
 //QuestionnnaireMaster routes ends
 
-//QuestionnnaireMaster routes start
+//QuestionnnaireType routes start
 Route::get('/admin/questiontype/', 'Admin\QuestionTypeController@index')->name('admin.questiontype.index');
 Route::get('/admin/questiontype/create', 'Admin\QuestionTypeController@create')->name('admin.questiontype.create');
 Route::post('/admin/questiontype/store', 'Admin\QuestionTypeController@store')->name('admin.questiontype.store');
 Route::post('/admin/questiontype/update/{id}', 'Admin\QuestionTypeController@update')->name('admin.questiontype.update');
 Route::get('/admin/questiontype/edit/{id}', 'Admin\QuestionTypeController@edit')->name('admin.questiontype.edit');
 Route::get('/admin/questiontype/delete/{id}', 'Admin\QuestionTypeController@delete')->name('admin.questiontype.delete');
-//QuestionnnaireMaster routes ends
+//QuestionnnaireType routes ends
+
+//Leavetype routes start
+Route::get('/admin/leavetype/', 'Admin\LeaveTypeMaster@index')->name('admin.leavetype.index');
+Route::get('/admin/leavetype/create', 'Admin\LeaveTypeMaster@create')->name('admin.leavetype.create');
+Route::post('/admin/leavetype/store', 'Admin\LeaveTypeMaster@store')->name('admin.leavetype.store');
+Route::post('/admin/leavetype/update/{id}', 'Admin\LeaveTypeMaster@update')->name('admin.leavetype.update');
+Route::get('/admin/leavetype/edit/{id}', 'Admin\LeaveTypeMaster@edit')->name('admin.leavetype.edit');
+Route::get('/admin/leavetype/delete/{id}', 'Admin\LeaveTypeMaster@delete')->name('admin.leavetype.delete');
+//Leavetype routes ends
