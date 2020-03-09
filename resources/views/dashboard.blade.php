@@ -100,6 +100,9 @@
         <li>
             <a href="/admin/questiontype">Question-Type</a>
         </li>
+        <li>
+            <a href="/admin/leavetype">Leave-Type</a>
+        </li>
     </ul>
 </section>
 </body>
