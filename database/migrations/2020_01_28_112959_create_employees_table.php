@@ -32,6 +32,7 @@ class CreateEmployeesTable extends Migration
             $table->string('department')->nullable()->comment('fetching from Department master');
             $table->string('department_lead')->nullable()->comment('fetching from Department-lead master');
             $table->string('designation')->nullable()->comment('fetching from Designation master');
+            $table->integer('is_active')->nullable()->comment('0 : Active | 1 : Inactive ');
             $table->timestamps();
         });
     }
