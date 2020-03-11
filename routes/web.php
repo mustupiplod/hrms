@@ -211,3 +211,43 @@ Route::post('/admin/leavetype/update/{id}', 'Admin\LeaveTypeMaster@update')->nam
 Route::get('/admin/leavetype/edit/{id}', 'Admin\LeaveTypeMaster@edit')->name('admin.leavetype.edit');
 Route::get('/admin/leavetype/delete/{id}', 'Admin\LeaveTypeMaster@delete')->name('admin.leavetype.delete');
 //Leavetype routes ends
+
+////Leave Request routes start
+//Route::get('/admin/leaverequest/', 'Admin\LeaveRequestController@index')->name('admin.leaverequest.index');
+//Route::get('/admin/leaverequest/create', 'Admin\LeaveRequestController@create')->name('admin.leaverequest.create');
+//Route::post('/admin/leaverequest/store', 'Admin\LeaveRequestController@store')->name('admin.leaverequest.store');
+//Route::post('/admin/leaverequest/update/{id}', 'Admin\LeaveRequestController@update')->name('admin.leaverequest.update');
+//Route::get('/admin/leaverequest/edit/{id}', 'Admin\LeaveRequestController@edit')->name('admin.leaverequest.edit');
+//Route::get('/admin/leaverequest/delete/{id}', 'Admin\LeaveRequestController@delete')->name('admin.leaverequest.delete');
+////Leave Request routes ends
+///
+//CountryMaster routes start
+Route::get('/admin/country/', 'Admin\CountryMasterController@index')->name('admin.country.index');
+Route::get('/admin/country/create', 'Admin\CountryMasterController@create')->name('admin.country.create');
+Route::post('/admin/country/store', 'Admin\CountryMasterController@store')->name('admin.country.store');
+Route::post('/admin/country/update/{id}', 'Admin\CountryMasterController@update')->name('admin.country.update');
+Route::get('/admin/country/edit/{id}', 'Admin\CountryMasterController@edit')->name('admin.country.edit');
+Route::get('/admin/country/delete/{id}', 'Admin\CountryMasterController@delete')->name('admin.country.delete');
+//CountryMaster routes ends
+
+//StateMaster routes start
+Route::get('/admin/state/', 'Admin\StateMasterController@index')->name('admin.state.index');
+Route::get('/admin/state/create', 'Admin\StateMasterController@create')->name('admin.state.create');
+Route::post('/admin/state/store', 'Admin\StateMasterController@store')->name('admin.state.store');
+Route::post('/admin/state/update/{id}', 'Admin\StateMasterController@update')->name('admin.state.update');
+Route::get('/admin/state/edit/{id}', 'Admin\StateMasterController@edit')->name('admin.state.edit');
+Route::get('/admin/state/delete/{id}', 'Admin\StateMasterController@delete')->name('admin.state.delete');
+//StateMaster routes ends
+
+//CityMaster routes start
+Route::get('/admin/city/', 'Admin\CityMasterController@index')->name('admin.city.index');
+Route::get('/admin/city/create', 'Admin\CityMasterController@create')->name('admin.city.create');
+Route::post('/admin/city/store', 'Admin\CityMasterController@store')->name('admin.city.store');
+Route::post('/admin/city/update/{id}', 'Admin\CityMasterController@update')->name('admin.city.update');
+Route::get('/admin/city/edit/{id}', 'Admin\CityMasterController@edit')->name('admin.city.edit');
+Route::get('/admin/city/delete/{id}', 'Admin\CityMasterController@delete')->name('admin.city.delete');
+//CityMaster routes ends
+
+Route::get('/getCountries','LocationMasterController@getCountries');
+Route::get('/state/{id}','LocationMasterController@getStates');
+Route::get('/city/{id}','LocationMasterController@getCities');
