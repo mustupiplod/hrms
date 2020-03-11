@@ -103,6 +103,18 @@
         <li>
             <a href="/admin/leavetype">Leave-Type</a>
         </li>
+        <li>
+            <a href="/admin/leaverequest">Leave-Request</a>
+        </li>
+        <li>
+            <a href="/admin/country">Add Country</a>
+        </li>
+        <li>
+            <a href="/admin/state">Add State</a>
+        </li>
+        <li>
+            <a href="/admin/city">Add City</a>
+        </li>
     </ul>
 </section>
 </body>
