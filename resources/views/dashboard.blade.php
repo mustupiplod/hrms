@@ -115,6 +115,9 @@
         <li>
             <a href="/admin/city">Add City</a>
         </li>
+        <li>
+            <a href="/getCountries">Location</a>
+        </li>
     </ul>
 </section>
 </body>
